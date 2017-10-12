@@ -1,3 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+/* ---------------
+   1. Variables & Mixins
+   --------------- */
+$color-background-main:rgb(255, 239, 207);
+$color-background-navbar:rgb(81, 60, 43);
+$color-background-sprite-active: rgb(83, 62, 31);  
+$color-background-sprite: rgb(116, 98, 86);
+$color-text-header: rgb(229, 137, 0);
+$color-text-subheader: rgb(152, 97, 14);
+$color-text-main: rgb(81, 60, 43);
+$color-text-overlay: rgb(255, 255, 255);
+$color-input-border: rgb(138, 101, 38);
+
+/* ---------------
+   2. Animations/Effects
+   --------------- */
+@keyframes fadeDownShow {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* ---------------
+   3. Global styles
+   --------------- */
+* {
+    box-sizing: border-box;
+}
 body {
-    color: blue;
+    background: $color-background-main;
+    color: $color-text-main;
+    font-family: 'Raleway', 'Helvetica', 'Segoe UI', sans-serif;
+    font-size: 1.375rem;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+/* ---------------
+   4. Page Components
+   --------------- */
+.nav {
+    background: $color-background-navbar;
+    color: $color-text-overlay;
+    font-family: 'Lato','Helvetica', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    height: 10.8%;
+    text-align: center;
+    line-height: 2em;
+    width: 100%;
+}
+
+.section-container {
+    text-align: center;
+    width: 100%;
+}
+.section-header {
+    animation: 650ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;
+    color: $color-text-header;
+    font-family: 'Lato','Helvetica', sans-serif;
+    font-size: 4.79em;
+    margin: 5% auto 1%;
+}
+.section-subheader {
+    animation: 750ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;
+    animation-delay: 750ms;
+    color: $color-text-subheader;
+    font-weight: 300;
+    font-size: 2.15em;
+    letter-spacing: -0.027em;
+    opacity: 0;
+    margin: 1% auto 5%;    
+}
+.section-selection {
+    display: flex;
+    flex-flow: row wrap;
+}
+.breakfast-option {
+    border: 1px solid #6A6060;
+    flex: 1 0 32.23%;
 }
