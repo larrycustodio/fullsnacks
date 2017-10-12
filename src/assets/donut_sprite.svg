@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="150"
+   viewBox="0 0 39.687499 39.687501"
+   version="1.1"
+   id="svg64"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="donut_sprite.svg">
+  <defs
+     id="defs58" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="80.200939"
+     inkscape:cy="119.50542"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid66"
+       enabled="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata61">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257.31248)">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.91071415;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 75 8.9277344 A 66.071424 66.071424 0 0 0 8.9277344 75 A 66.071424 66.071424 0 0 0 75 141.07227 A 66.071424 66.071424 0 0 0 141.07227 75 A 66.071424 66.071424 0 0 0 75 8.9277344 z M 75 12.464844 A 62.535888 62.535888 0 0 1 137.53516 75 A 62.535888 62.535888 0 0 1 75 137.53516 A 62.535888 62.535888 0 0 1 12.464844 75 A 62.535888 62.535888 0 0 1 75 12.464844 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,257.31248)"
+       id="path932" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12.33451271;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 84.255859 19.753906 C 78.575405 19.715622 76.646572 24.120457 69.597656 24.861328 C 61.541752 25.708038 59.028879 20.482664 51.628906 23.777344 C 44.228934 27.072024 46.431789 32.435325 40.412109 37.855469 C 34.39243 43.275613 29.28842 40.524016 25.238281 47.539062 C 21.188142 54.554109 26.123596 57.60017 24.439453 65.523438 C 22.755311 73.446705 17.008759 74.219487 17.855469 82.275391 C 18.702178 90.331294 24.482664 89.89495 27.777344 97.294922 C 31.072024 104.69489 26.878684 108.69907 32.298828 114.71875 C 37.718972 120.73843 42.139251 116.98502 49.154297 121.03516 C 56.169343 125.0853 55.129467 130.79047 63.052734 132.47461 C 70.976002 134.15875 72.34644 128.52444 80.402344 127.67773 C 88.458248 126.83102 90.971121 132.0564 98.371094 128.76172 C 105.77107 125.46704 103.56821 120.10374 109.58789 114.68359 C 115.60757 109.26345 120.71158 112.01505 124.76172 105 C 128.81186 97.984954 123.8764 94.940845 125.56055 87.017578 C 127.24469 79.094311 132.99124 78.319576 132.14453 70.263672 C 131.29782 62.207768 125.51734 62.646066 122.22266 55.246094 C 118.92798 47.846122 123.12132 43.841945 117.70117 37.822266 C 112.28103 31.802586 107.86075 35.554045 100.8457 31.503906 C 93.830657 27.453767 94.870533 21.750549 86.947266 20.066406 C 85.956857 19.855888 85.067353 19.759375 84.255859 19.753906 z M 75 47.314453 A 27.685626 27.685626 0 0 1 102.68555 75 A 27.685626 27.685626 0 0 1 75 102.68555 A 27.685626 27.685626 0 0 1 47.314453 75 A 27.685626 27.685626 0 0 1 75 47.314453 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,257.31248)"
+       id="path941" />
+  </g>
+</svg>
