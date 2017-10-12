@@ -41,7 +41,7 @@ class App extends Component {
                 <nav className='nav'>
                     Breakfast Finder
                 </nav>
-                <HomeOptions 
+                <Home 
                 options={this.state.options}
                 onClick={this.onClickOption} />
             </div>
@@ -49,7 +49,7 @@ class App extends Component {
     }
 }
 
-function HomeOptions(props) {
+function Home(props) {
     return (
         <section className='section-container'>
             <h1 className='section-header'>Good morning!</h1>
