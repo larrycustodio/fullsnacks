@@ -30,15 +30,20 @@ class App extends Component {
                 }
             ]
         }
+        this.onClickOption = this.onClickOption.bind(this);
     }
-
+    onClickOption(selection){
+        console.log(selection);
+    }
     render() {
         return (
             <div className='container'>
                 <nav className='nav'>
                     Breakfast Finder
                 </nav>
-                <HomeOptions options={this.state.options} />
+                <HomeOptions 
+                options={this.state.options}
+                onClick={this.onClickOption} />
             </div>
         );
     }
@@ -54,7 +59,8 @@ function HomeOptions(props) {
                     return (
                         <BreakfastOption
                             key={'breakfast-' + index}
-                            item={breakfastItem} />
+                            item={breakfastItem}
+                            onClick={props.onClickOption} />
                     );
                 })}
             </div>
@@ -65,7 +71,7 @@ function HomeOptions(props) {
 function BreakfastOption(props) {
     console.log(props.item.name);
     return (
-        <div className='breakfast-option'>
+        <div className='breakfast-option' onClick={props.onClickOption}>
             <p>{props.item.name}</p>
             <img src={props.item.selectionSrc} />
         </div>
