@@ -1,0 +1,28 @@
+{
+  "name": "breakfast-finder",
+  "version": "1.0.0",
+  "description": "Finds nearby breakfast places based on user choices. Powered by Yelp and MapBox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrycustodio/breakfast-finder.git"
+  },
+  "keywords": [
+    "react",
+    "yelp",
+    "fusion",
+    "mapbox",
+    "node",
+    "express",
+    "axios"
+  ],
+  "author": "larrycustodio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrycustodio/breakfast-finder/issues"
+  },
+  "homepage": "https://github.com/larrycustodio/breakfast-finder#readme"
+}
