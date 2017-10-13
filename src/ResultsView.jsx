@@ -20,7 +20,7 @@ class ResultsView extends Component {
     }
     componentWillMount() {
         const search = this.state.searchFilters;
-        const requestUrl = 'http://localhost:3002/api/search/' + search.category_filter + '/location/' + search.location; 
+        const requestUrl = 'http://localhost:3002/api/yelp/search/' + search.category_filter + '/location/' + search.location; 
         console.log(requestUrl);
         axios.get(requestUrl)
             .then(res => res.data)
