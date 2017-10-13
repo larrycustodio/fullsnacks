@@ -153,3 +153,19 @@ a:focus {
     //placeholder
     background: #72ca76;
 }
+
+.toggle-cat {
+    display: flex;
+    flex: row wrap;
+}
+.cat-icon {
+    background: $color-background-sprite;
+    color: $color-text-overlay;
+    flex: 1 0 33%;
+}
+.cat-icon-svg {
+    height: 85px;
+}
+.cat-icon-name {
+    margin: 0.05em 0;
+}

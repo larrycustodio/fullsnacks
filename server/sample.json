@@ -1,0 +1,421 @@
+{  
+    "businesses":[  
+       {  
+          "id":"the-forum-coffee-house-san-diego-2",
+          "name":"The Forum Coffee House",
+          "image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/-DkMw2Y-IN4jz_Xbm22yFg/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/the-forum-coffee-house-san-diego-2?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":149,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":4.5,
+          "coordinates":{  
+             "latitude":32.82209,
+             "longitude":-117.1842
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"4340 Genesee Ave",
+             "address2":"Ste 110",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92117",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "4340 Genesee Ave",
+                "Ste 110",
+                "San Diego, CA 92117"
+             ]
+          },
+          "phone":"+18583846020",
+          "display_phone":"(858) 384-6020",
+          "distance":4505.013690804438
+       },
+       {  
+          "id":"duet-coffee-san-diego-2",
+          "name":"Duet Coffee",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/GMyV9kJI755Q4RIhBKFKig/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/duet-coffee-san-diego-2?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":262,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             },
+             {  
+                "alias":"waffles",
+                "title":"Waffles"
+             }
+          ],
+          "rating":4.5,
+          "coordinates":{  
+             "latitude":32.7668557616376,
+             "longitude":-117.058359177746
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"6526 El Cajon Blvd",
+             "address2":null,
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92115",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "6526 El Cajon Blvd",
+                "San Diego, CA 92115"
+             ]
+          },
+          "phone":"+16192305787",
+          "display_phone":"(619) 230-5787",
+          "distance":9329.773177137675
+       },
+       {  
+          "id":"scrimshaw-coffee-san-diego-2",
+          "name":"Scrimshaw Coffee",
+          "image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/-F_54nJmRWM-YdHzmYdMCA/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/scrimshaw-coffee-san-diego-2?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":31,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":5.0,
+          "coordinates":{  
+             "latitude":32.7585872291484,
+             "longitude":-117.075211251699
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"5542 El Cajon Blvd",
+             "address2":"",
+             "address3":null,
+             "city":"San Diego",
+             "zip_code":"92115",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "5542 El Cajon Blvd",
+                "San Diego, CA 92115"
+             ]
+          },
+          "phone":"+16195012355",
+          "display_phone":"(619) 501-2355",
+          "distance":8186.9643731521155
+       },
+       {  
+          "id":"heartsleeves-coffee-san-diego",
+          "name":"Heartsleeves Coffee",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/QUgcnzUOYoqG9D_36hkSng/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/heartsleeves-coffee-san-diego?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":199,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":4.5,
+          "coordinates":{  
+             "latitude":32.7244775336249,
+             "longitude":-117.168403491996
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"621 W Fir St",
+             "address2":null,
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92101",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "621 W Fir St",
+                "San Diego, CA 92101"
+             ]
+          },
+          "phone":"+16194310231",
+          "display_phone":"(619) 431-0231",
+          "distance":7470.270938868112
+       },
+       {  
+          "id":"bird-rock-coffee-roasters-san-diego-3",
+          "name":"Bird Rock Coffee Roasters",
+          "image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/EDYRtuaFI_mSgqsH9li0Ow/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/bird-rock-coffee-roasters-san-diego-3?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":77,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             },
+             {  
+                "alias":"coffeeroasteries",
+                "title":"Coffee Roasteries"
+             }
+          ],
+          "rating":5.0,
+          "coordinates":{  
+             "latitude":32.7712275,
+             "longitude":-117.2021011
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"1270 Morena Blvd",
+             "address2":"",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92110",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "1270 Morena Blvd",
+                "San Diego, CA 92110"
+             ]
+          },
+          "phone":"+16192720203",
+          "display_phone":"(619) 272-0203",
+          "distance":4973.546555908362
+       },
+       {  
+          "id":"roast-coach-coffee-bar-san-diego-4",
+          "name":"Roast Coach Coffee Bar",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/zKF9iL2onp9DtT3v1fzUlg/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/roast-coach-coffee-bar-san-diego-4?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":111,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             },
+             {  
+                "alias":"foodstands",
+                "title":"Food Stands"
+             }
+          ],
+          "rating":5.0,
+          "coordinates":{  
+             "latitude":32.70892,
+             "longitude":-117.1589
+          },
+          "transactions":[  
+             "delivery",
+             "pickup"
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"345 6th Ave",
+             "address2":"",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92101",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "345 6th Ave",
+                "San Diego, CA 92101"
+             ]
+          },
+          "phone":"+16197388652",
+          "display_phone":"(619) 738-8652",
+          "distance":9089.031064751907
+       },
+       {  
+          "id":"s3-coffee-bar-san-diego",
+          "name":"S3 Coffee Bar",
+          "image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/Lc_HPKogvKvMwxR-kdZI-A/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/s3-coffee-bar-san-diego?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":125,
+          "categories":[  
+             {  
+                "alias":"desserts",
+                "title":"Desserts"
+             },
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":5.0,
+          "coordinates":{  
+             "latitude":32.7868855562046,
+             "longitude":-117.097536250949
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"6171 Mission Gorge Rd",
+             "address2":"Ste 102",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92120",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "6171 Mission Gorge Rd",
+                "Ste 102",
+                "San Diego, CA 92120"
+             ]
+          },
+          "phone":"+16196935333",
+          "display_phone":"(619) 693-5333",
+          "distance":5301.913477347645
+       },
+       {  
+          "id":"philz-coffee-san-diego-5",
+          "name":"Philz Coffee",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/IB5dEsuRvIdvT1-dc4ENMQ/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/philz-coffee-san-diego-5?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":69,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":4.0,
+          "coordinates":{  
+             "latitude":32.8684918,
+             "longitude":-117.2334345
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"8849 Villa La Jolla Dr",
+             "address2":"Ste 307",
+             "address3":null,
+             "city":"San Diego",
+             "zip_code":"92037",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "8849 Villa La Jolla Dr",
+                "Ste 307",
+                "San Diego, CA 92037"
+             ]
+          },
+          "phone":"+18582425070",
+          "display_phone":"(858) 242-5070",
+          "distance":11387.903290304748
+       },
+       {  
+          "id":"cuppa-cuppa-drive-thru-espresso-bar-san-diego-3",
+          "name":"Cuppa Cuppa Drive-Thru Espresso Bar",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/kbZCX7pI-moIQT-vpEmWtw/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/cuppa-cuppa-drive-thru-espresso-bar-san-diego-3?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":260,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":5.0,
+          "coordinates":{  
+             "latitude":32.79329,
+             "longitude":-117.0982
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$",
+          "location":{  
+             "address1":"6606 Mission Gorge Rd",
+             "address2":"",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92120",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "6606 Mission Gorge Rd",
+                "San Diego, CA 92120"
+             ]
+          },
+          "phone":"+16198524959",
+          "display_phone":"(619) 852-4959",
+          "distance":5289.151959449784
+       },
+       {  
+          "id":"moniker-general-coffee-san-diego-2",
+          "name":"Moniker General - Coffee",
+          "image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/c3YJh8jDJc1-MeYQaYy6ig/o.jpg",
+          "is_closed":false,
+          "url":"https://www.yelp.com/biz/moniker-general-coffee-san-diego-2?adjust_creative=Ts9mXy-CsdlBMR8Ub9RpOg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ts9mXy-CsdlBMR8Ub9RpOg",
+          "review_count":119,
+          "categories":[  
+             {  
+                "alias":"coffee",
+                "title":"Coffee & Tea"
+             }
+          ],
+          "rating":4.5,
+          "coordinates":{  
+             "latitude":32.7409629821777,
+             "longitude":-117.211196899414
+          },
+          "transactions":[  
+ 
+          ],
+          "price":"$$",
+          "location":{  
+             "address1":"2860 Sims Rd",
+             "address2":"",
+             "address3":"",
+             "city":"San Diego",
+             "zip_code":"92106",
+             "country":"US",
+             "state":"CA",
+             "display_address":[  
+                "2860 Sims Rd",
+                "San Diego, CA 92106"
+             ]
+          },
+          "phone":"+16192558772",
+          "display_phone":"(619) 255-8772",
+          "distance":7678.885874886869
+       }
+    ],
+    "total":3376,
+    "region":{  
+       "center":{  
+          "longitude":-117.154083252,
+          "latitude":32.7905693945
+       }
+    }
+ }
