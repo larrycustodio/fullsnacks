@@ -47,11 +47,20 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
+a,
+a:hover,
+a:visited,
+a:focus {
+    color: inherit;
+    text-decoration: inherit;
+}
 /* ---------------
    4. Page Components
    --------------- */
 
-/* Top Bar */
+/* ---------
+   4.1 Top Bar
+   --------- */
 .nav {
     background: $color-background-navbar;
     color: $color-text-overlay;
@@ -63,7 +72,9 @@ body {
     line-height: 2em;
     width: 100%;
 }
-/* Section Headers & Containers */
+/* ------------------
+   4.2 Section Headers & Containers
+   ------------------ */
 .section-container {
     text-align: center;
     width: 100%;
@@ -82,7 +93,9 @@ body {
     letter-spacing: -0.027em;
     margin: 1% auto 5%;    
 }
-/* Category Selection */
+/* -----------------
+   4.3 Category Selection
+   ----------------- */
 .selection-category {
     display: flex;
     flex-flow: row wrap;
@@ -97,7 +110,9 @@ body {
     font-weight: 800;
     margin:0 auto;
 }
-/* Location Input */
+/* ----------------
+   4.4 Location Input 
+   ---------------- */
 .input-text-location {
     background: none;
     border: none;
@@ -115,4 +130,26 @@ body {
 }
 .input-text-button {
     transform: translate(-40px,10px);
+}
+/* ----------------
+   4.4 Search Results
+   ---------------- */
+.search-results-view {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 90vh
+}
+.results-nearby {
+    font-family: 'Lato','Helvetica','sans-serif';
+    font-size: 1.48em;
+    font-weight: 700;
+    margin: 1.12em 0;
+}
+.display-scroll-results {
+    flex: 1 0 30.45%
+}
+.display-map-results {
+    flex: 1 0 69%;
+    //placeholder
+    background: #72ca76;
 }

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
 
 class App extends Component {
     constructor() {
         super();
-
         this.state = {
-            activeSelection: {
+            searchFilter: {
                 categories: '',
                 location: ''
             },
@@ -33,68 +31,65 @@ class App extends Component {
         }
         this.clickOptionHandler = this.clickOptionHandler.bind(this);
         this.enterLocationHandler = this.enterLocationHandler.bind(this);
-
     }
-
     enterLocationHandler(e) {
         e.preventDefault();
-        const updateChoice = Object.assign({}, this.state.activeSelection);
+        const updateChoice = Object.assign({}, this.state.searchFilter);
         updateChoice.location = e.target.location.value;
         this.setState({
-            activeSelection: updateChoice
+            searchFilter: updateChoice
         });
-        console.log(this.state);
     }
     clickOptionHandler(e) {
         e.preventDefault();
-        const updateChoice = Object.assign({}, this.state.activeSelection);
+        const updateChoice = Object.assign({}, this.state.searchFilter);
         const optionIndex = e.target.dataset.categoryValue;
         updateChoice.categories = this.state.options[optionIndex].categories;
         this.setState({
-            activeSelection: updateChoice
+            searchFilter: updateChoice
         });
     }
     render() {
         return (
             <div className='container'>
                 <nav className='nav'>
-                    Breakfast Finder
+                    <a href='/'>Breakfast Finder</a>
                 </nav>
                 <section className='section-container'>
-                    <ChooseItem />
-                    <form className='selection-category'>
-                        {this.state.options.map((option, index) => {
-                            return <BreakfastOption
-                                key={'breakfast-option-' + option.name}
-                                index={index}
-                                category={option}
-                                onClick={this.clickOptionHandler} />
-                        })}
-                    </form>
-                    <ChooseLocation />
-                    <LocationInput onEnter={this.enterLocationHandler} />
+                    {this.state.searchFilter.categories == '' ?
+                        <CategoryOptionsView
+                            categories={this.state.options}
+                            onClick={this.clickOptionHandler} /> :
+                        this.state.searchFilter.location == '' ?
+                            <LocationInputView onEnter={this.enterLocationHandler} /> :
+                            <ResultsView 
+                            searchQuery={this.state.searchFilter}
+                            categories={this.state.options} />
+                    }
                 </section>
             </div>
         );
     }
 }
 
-const ChooseItem = (props) => {
+const CategoryOptionsView = (props) => {
     return (
-        <header className='header-container'>
-            <h1 className='section-header'>Good morning!</h1>
-            <p className='section-subheader'>what do we feel like having today?</p>
-        </header>
+        <div className=''>
+            <header className='header-container'>
+                <h1 className='section-header'>Good morning!</h1>
+                <p className='section-subheader'>what do we feel like having today?</p>
+            </header>
+            <form className='selection-category'>
+                {props.categories.map((option, index) => {
+                    return <BreakfastOption
+                        key={'breakfast-option-' + option.name}
+                        index={index}
+                        category={option}
+                        onClick={props.onClick} />
+                })}
+            </form>
+        </div>
     );
-}
-
-const ChooseLocation = (props) => {
-    return (
-        <header className='header-container'>
-            <h1 className='section-header'>Great Choice!</h1>
-            <p className='section-subheader'>where are you headed this morning?</p>
-        </header>
-    )
 }
 
 const BreakfastOption = (props) => {
@@ -109,22 +104,70 @@ const BreakfastOption = (props) => {
     );
 }
 
+const LocationInputView = (props) => {
+    return (
+        <div className=''>
+            <header className='header-container'>
+                <h1 className='section-header'>Great Choice!</h1>
+                <p className='section-subheader'>where are you headed this morning?</p>
+            </header>
+            <LocationInput onEnter={props.onEnter} />
+        </div>
+    )
+}
+
 const LocationInput = (props) => {
     return (
         <form className='location-form'
             onSubmit={props.onEnter}>
-            <div className='form-input-group'>
-                <input type='text'
-                    name='location'
-                    id='inputLocation'
-                    className='input-text-location' />
-                <img src='./assets/svg/location.svg'
-                    className='input-text-button'
-                    onClick={props.onFindLocation} />
-            </div>
+            <input type='text'
+                name='location'
+                id='inputLocation'
+                className='input-text-location' />
             <label htmlFor='search_location'>ENTER YOUR CITY/ZIP CODE</label>
         </form>
     );
 }
 
+class ResultsView extends Component {
+    constructor(props){
+        super();
+        this.state = {
+            searchFilters: {
+                location: '',
+                category_filter: '',
+                limit: '10',
+                sort: '1',
+            },
+            results: ['','']
+        }
+    }
+    render(){
+        return (
+            <div className='search-results-view'>
+                <ResultsContainer 
+                results={this.state.results}
+                toggleIcons={this.props.categories}/>
+                <MapContainer />
+            </div>
+        );
+    }
+}
+const ResultsContainer = (props) => {
+    return (
+        <div className='display-scroll-results'>
+            <div className='results-nearby'>
+                Found {props.results.length||0} places nearby!
+            </div>
+        </div>
+    );
+}
+
+const MapContainer = (props) => {
+    return (
+        <div className='display-map-results'>
+            Map Goes here!
+        </div>
+    )
+}
 export default App;
