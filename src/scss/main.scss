@@ -7,28 +7,64 @@ $color-background-main:rgb(255, 239, 207);
 $color-background-navbar:rgb(81, 60, 43);
 $color-background-sprite-active: rgb(83, 62, 31);  
 $color-background-sprite: rgb(116, 98, 86);
+
 $color-text-header: rgb(229, 137, 0);
 $color-text-subheader: rgb(152, 97, 14);
 $color-text-main: rgb(81, 60, 43);
 $color-text-overlay: rgb(255, 255, 255);
+$color-text-overlay-subtext: rgb(212,212,212);
 $color-input-border: rgb(138, 101, 38);
 
 /* ---------------
    2. Animations/Effects
    --------------- */
-@keyframes fadeDown {
+@keyframes zoom {
     0% {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: scale(0.75);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(15deg);
+    }
+    50% {
+        transform: scale(0.95) rotate(-15deg);
+    }
+    75% {
+        transform: scale(1.05) rotate(5deg);
+    }
+    100% {  
+        transform: rotate(0deg);
+    }
+}
+@keyframes pop {
+    0%{
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+        transform: scale(1.35);
+    }
+    45%{
+        opacity: 1;
+        transform: scale(1);
     }
     100%{
         opacity: 1;
-        transform: translateY(0%);
+        transform: scale(1);
     }
-}
-
-.fade-down {
-    animation: 700ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;    
 }
 /* ---------------
    3. Global styles
@@ -57,7 +93,6 @@ a:focus {
 /* ---------------
    4. Page Components
    --------------- */
-
 /* ---------
    4.1 Top Bar
    --------- */
@@ -96,13 +131,31 @@ a:focus {
 /* -----------------
    4.3 Category Selection
    ----------------- */
-.selection-category {
+.category-header {
+    animation: 1s zoom forwards;
+}
+.category-selections {
     display: flex;
     flex-flow: row wrap;
+    margin: 0 12.5%;
+    transition: all ease;
 }
-.selection-option {
-    flex: 1 0 32.23%;
+.category-option {
     cursor: pointer;
+    flex: 25%;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}){
+            opacity: 0;
+            animation: 1.25s pop forwards;
+            animation-delay: $i * 0.75s;
+        }
+    }        
+    .select-icon {
+        transition: all 1s;
+        &:hover {            
+            animation: 1s shake infinite;
+        }
+    }
 }
 .category-random {
     flex: 1;
@@ -131,10 +184,10 @@ a:focus {
 .input-text-button {
     transform: translate(-40px,10px);
 }
-/* ----------------
-   4.4 Search Results
-   ---------------- */
-.search-results-view {
+/* --------------------------
+   4.4 Search Results - Yelp
+   -------------------------- */
+.view-search-results {
     display: flex;
     flex-flow: row nowrap;
     height: 90vh
@@ -143,17 +196,35 @@ a:focus {
     font-family: 'Lato','Helvetica','sans-serif';
     font-size: 1.48em;
     font-weight: 700;
+    height: 4%;    
     margin: 1.12em 0;
 }
 .display-list-results {
-    flex: 1 0 30.45%
+    flex: 1 0 30.5vw;
+    max-width: 30.5vw;
 }
-.display-map-results {
-    flex: 1 0 69%;
-    //placeholder
-    background: #72ca76;
+.results-list {
+    max-height: 73.5%;
+    overflow-y: scroll;
 }
-
+.result-list-card {
+    color: $color-text-overlay;
+    height: 17vh;
+    max-width: 100%;
+    padding: 1em;
+    text-align: left;
+    & > * {
+        margin: 0;
+    }
+}
+.list-name {
+    font-size: 1.1em;
+}
+.list-distance {
+    color: $color-text-overlay-subtext;
+    font-size: 0.75em;
+    font-weight: 100;
+}
 .toggle-cat {
     display: flex;
     flex: row wrap;
@@ -168,4 +239,12 @@ a:focus {
 }
 .cat-icon-name {
     margin: 0.05em 0;
+}
+/* --------------------------
+   4.4 Search Results - Map
+   -------------------------- */
+.display-map-results {
+    flex: 1 0 69%;
+    //placeholder
+    background: #72ca76;
 }

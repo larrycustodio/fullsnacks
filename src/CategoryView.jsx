@@ -2,12 +2,12 @@ import React from 'react';
 
 const CategoryView = (props) => {
     return (
-        <div className=''>
-            <header className='header-container'>
+        <div className='view-container'>
+            <header className='header-container category-header'>
                 <h1 className='section-header'>Good morning!</h1>
                 <p className='section-subheader'>what do we feel like having today?</p>
             </header>
-            <form className='selection-category'>
+            <div className='category-selections'>
                 {props.categories.map((option, index) => {
                     return <BreakfastOption
                         key={'breakfast-option-' + option.name}
@@ -15,14 +15,14 @@ const CategoryView = (props) => {
                         category={option}
                         onClick={props.onClick} />
                 })}
-            </form>
+            </div>
         </div>
     );
 }
 
 const BreakfastOption = (props) => {
     return (
-        <div className='selection-option'>
+        <div className='category-option'>
             <img className='select-icon'
                 src={props.category.selectionSrc}
                 onClick={props.onClick}

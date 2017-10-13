@@ -2,8 +2,8 @@ import React from 'react';
 
 const LocationView = (props) => {
     return (
-        <div className=''>
-            <header className='header-container'>
+        <div className='view-container'>
+            <header className='header-container location-header'>
                 <h1 className='section-header'>Great Choice!</h1>
                 <p className='section-subheader'>where are you headed this morning?</p>
             </header>

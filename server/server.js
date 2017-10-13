@@ -3,7 +3,6 @@ const app = express();
 const morgan = require('morgan');
 
 const Yelp = require('yelpv3');
-const MapboxClient = require('mapbox');
 const cors = require('cors');
 
 app.use(cors());
@@ -28,12 +27,6 @@ app.get('/api/yelp/search/:term/location/:location', (req, res) => {
         res.send('Error occured, try again! :(');
         console.log(err);
     });
-});
-
-/* Mapbox API */
-app.get('/api/mapbox/',(req,res) => {
-
-
 });
 
 module.exports = app;
