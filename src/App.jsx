@@ -15,19 +15,19 @@ class App extends Component {
             options: [
                 {
                     name: 'coffee',
-                    categories: ['coffee', 'coffeeroasteries'],
+                    categories: 'coffee',
                     selectionSrc: './assets/svg/coffee.svg',
                     spriteSrc: './assets/svg/coffee_sprite.svg'
                 },
                 {
                     name: 'donut',
-                    categories: ['donuts', 'bakeries'],
+                    categories: 'donuts',
                     selectionSrc: './assets/svg/donut.svg',
                     spriteSrc: './assets/svg/donut_sprite.svg'
                 },
                 {
                     name: 'brunch',
-                    categories: ['breakfast_brunch'],
+                    categories: 'breakfast_brunch',
                     selectionSrc: './assets/svg/breakfast.svg',
                     spriteSrc: './assets/svg/breakfast_sprite.svg'
                 }
@@ -61,7 +61,8 @@ class App extends Component {
                     <a href='/'>Breakfast Finder</a>
                 </nav>
                 <section className='section-container'>
-                    {this.state.searchFilter.categories == '' ?
+                    {
+                        this.state.searchFilter.categories == '' ?
                         <CategoryView
                             categories={this.state.options}
                             onClick={this.clickOptionHandler} /> :
@@ -69,7 +70,8 @@ class App extends Component {
                             <LocationView onEnter={this.enterLocationHandler} /> :
                             <ResultsView
                                 search={this.state.searchFilter}
-                                categories={this.state.options} />
+                                categories={this.state.options}
+                                />
                     }
                 </section>
             </div>

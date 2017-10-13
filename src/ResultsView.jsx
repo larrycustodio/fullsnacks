@@ -6,26 +6,38 @@ class ResultsView extends Component {
         super(props);
         this.state = {
             searchFilters: {
-                name: this.props.search.name,
-                location: this.props.search.location,
                 category_filter: this.props.search.categories,
                 limit: '10',
+                location: this.props.search.location,
+                name: this.props.search.name,
                 sort: '1',
             },
-            results: []
+            results: {}
         }
     }
+    onClickHandler(e) {
+        //todo on toggle
+    }
     componentWillMount() {
-        axios.get('http://localhost:3002/sample')
+        const search = this.state.searchFilters;
+        const requestUrl = 'http://localhost:3002/api/search/' + search.category_filter + '/location/' + search.location; 
+        console.log(requestUrl);
+        axios.get(requestUrl)
             .then(res => res.data)
-            .then(results => this.setState({ results }));
+            .then(results => {
+                this.setState({
+                    results: results
+                });
+            });
+        console.log(this.state.results);
     }
     render() {
         return (
             <div className='search-results-view'>
                 <ResultsContainer
                     results={this.state.results}
-                    toggleIcons={this.props.categories} />
+                    toggleIcons={this.props.categories}
+                    onClick={this.onClickHandler} />
                 <MapContainer />
             </div>
         );
@@ -34,25 +46,40 @@ class ResultsView extends Component {
 
 const ResultsContainer = (props) => {
     return (
-        <div className='display-scroll-results'>
+        <div className='display-list-results'>
             <div className='results-nearby'>
-                Found {props.results.length} places nearby!
+                Found 'xyz' places nearby!
+            </div>
+            <div className='result-list'>
             </div>
             <div className='toggle-cat'>
-                {props.toggleIcons.map((icon,index) => {
+                {props.toggleIcons.map((icon, index) => {
                     return (
-                        <div key={'sprite-'+index}
-                        className='cat-icon'>
-                            <img className='cat-icon-svg' src={icon.spriteSrc} />
-                            <p className='cat-icon-name'>{icon.name.toUpperCase()}</p>
-                        </div>
+                        <CategorySprite className='cat-icon'
+                            key={'sprite-' + index}
+                            index={index}
+                            onClick={props.onClick}
+                            icon={icon} />
                     );
                 })}
             </div>
         </div>
     );
 }
-
+const CategorySprite = (props) => {
+    return (
+        <div className='cat-icon'
+            onClick={props.onClick}
+            data-category-value={props.index} >
+            <img className='cat-icon-svg'
+                data-category-value={props.index}
+                src={props.icon.spriteSrc} />
+            <p className='cat-icon-name'>
+                {props.icon.name.toUpperCase()}
+            </p>
+        </div>
+    );
+}
 const MapContainer = (props) => {
     return (
         <div className='display-map-results'>
