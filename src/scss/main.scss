@@ -16,7 +16,7 @@ $color-input-border: rgb(138, 101, 38);
 /* ---------------
    2. Animations/Effects
    --------------- */
-@keyframes fadeDownShow {
+@keyframes fadeDown {
     0% {
         opacity: 0;
         transform: translateY(-20%);
@@ -27,6 +27,9 @@ $color-input-border: rgb(138, 101, 38);
     }
 }
 
+.fade-down {
+    animation: 700ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;    
+}
 /* ---------------
    3. Global styles
    --------------- */
@@ -47,6 +50,8 @@ body {
 /* ---------------
    4. Page Components
    --------------- */
+
+/* Top Bar */
 .nav {
     background: $color-background-navbar;
     color: $color-text-overlay;
@@ -58,34 +63,56 @@ body {
     line-height: 2em;
     width: 100%;
 }
-
+/* Section Headers & Containers */
 .section-container {
     text-align: center;
     width: 100%;
 }
 .section-header {
-    animation: 650ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;
     color: $color-text-header;
     font-family: 'Lato','Helvetica', sans-serif;
     font-size: 4.79em;
     margin: 5% auto 1%;
 }
 .section-subheader {
-    animation: 750ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;
     animation-delay: 750ms;
     color: $color-text-subheader;
     font-weight: 300;
     font-size: 2.15em;
     letter-spacing: -0.027em;
-    opacity: 0;
     margin: 1% auto 5%;    
 }
-.section-selection {
+/* Category Selection */
+.selection-category {
     display: flex;
     flex-flow: row wrap;
 }
-.breakfast-option {
-    border: 1px solid #6A6060;
+.selection-option {
     flex: 1 0 32.23%;
     cursor: pointer;
+}
+.category-random {
+    flex: 1;
+    font-size: 1.75em;
+    font-weight: 800;
+    margin:0 auto;
+}
+/* Location Input */
+.input-text-location {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $color-input-border;
+    display: inline-block;
+    font-size: 1.75em;
+    margin: 0 auto 0.5em;
+    padding: 0.25em 0.5em;
+    width: 28vw;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+    }
+}
+.input-text-button {
+    transform: translate(-40px,10px);
 }

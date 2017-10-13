@@ -21185,19 +21185,97 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         super();
 
         this.state = {
-            lochnessMonster: 3.50
+            activeSelection: {
+                activechoice: '',
+                time: ''
+            },
+            options: [{
+                name: 'coffee',
+                categories: ['coffee', 'coffeeroasteries'],
+                selectionSrc: './assets/coffee.svg',
+                spriteSrc: './assets/coffee_sprite.svg'
+            }, {
+                name: 'donut',
+                categories: ['donuts', 'bakeries'],
+                selectionSrc: './assets/donut.svg',
+                spriteSrc: './assets/donut_sprite.svg'
+            }, {
+                name: 'brunch',
+                categories: ['breakfast_brunch'],
+                selectionSrc: './assets/breakfast.svg',
+                spriteSrc: './assets/breakfast_sprite.svg'
+            }]
         };
+        this.onClickOption = this.onClickOption.bind(this);
     }
-
+    onClickOption(selection) {
+        console.log(selection);
+    }
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'container' },
-            'Homepage'
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'nav',
+                { className: 'nav' },
+                'Breakfast Finder'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Home, {
+                options: this.state.options,
+                onClick: this.onClickOption })
         );
     }
 }
 
+function Home(props) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'section',
+        { className: 'section-container' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h1',
+            { className: 'section-header' },
+            'Good morning!'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            { className: 'section-subheader' },
+            'what do you feel like having today?'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'section-selection' },
+            props.options.map((breakfastItem, index) => {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(BreakfastOption, {
+                    key: 'breakfast-' + index,
+                    item: breakfastItem,
+                    onClick: props.onClickOption });
+            })
+        )
+    );
+}
+
+function BreakfastOption(props) {
+    console.log(props.item.name);
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'breakfast-option', onClick: props.onClickOption },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            null,
+            props.item.name
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'svg',
+            { viewBox: '0 0 79.374999 79.375002' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('use', { xlinkhref: './assets/' + props.item.name + '#' + props.item.name + '-option' })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'a',
+            { href: props.item.selectionSrc },
+            'Link'
+        )
+    );
+}
 /* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
@@ -21237,10 +21315,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(35)(undefined);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato|Raleway);", ""]);
 
 // module
-exports.push([module.i, "body {\n  color: blue; }\n", ""]);
+exports.push([module.i, "/* ---------------\r\n   1. Variables & Mixins\r\n   --------------- */\n/* ---------------\r\n   2. Animations/Effects\r\n   --------------- */\n@keyframes fadeDownShow {\n  0% {\n    opacity: 0;\n    transform: translateY(-20%); }\n  100% {\n    opacity: 1;\n    transform: translateY(0%); } }\n\n/* ---------------\r\n   3. Global styles\r\n   --------------- */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #ffefcf;\n  color: #513c2b;\n  font-family: 'Raleway', 'Helvetica', 'Segoe UI', sans-serif;\n  font-size: 1.375rem; }\n\n.container {\n  display: flex;\n  flex-flow: row wrap; }\n\n/* ---------------\r\n   4. Page Components\r\n   --------------- */\n.nav {\n  background: #513c2b;\n  color: white;\n  font-family: 'Lato','Helvetica', sans-serif;\n  font-size: 2em;\n  font-weight: 700;\n  height: 10.8%;\n  text-align: center;\n  line-height: 2em;\n  width: 100%; }\n\n.section-container {\n  text-align: center;\n  width: 100%; }\n\n.section-header {\n  animation: 650ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;\n  color: #e58900;\n  font-family: 'Lato','Helvetica', sans-serif;\n  font-size: 4.79em;\n  margin: 5% auto 1%; }\n\n.section-subheader {\n  animation: 750ms fadeDownShow cubic-bezier(0.28, 0.01, 0.74, 0.97) forwards;\n  animation-delay: 750ms;\n  color: #98610e;\n  font-weight: 300;\n  font-size: 2.15em;\n  letter-spacing: -0.027em;\n  opacity: 0;\n  margin: 1% auto 5%; }\n\n.section-selection {\n  display: flex;\n  flex-flow: row wrap; }\n\n.breakfast-option {\n  border: 1px solid #6A6060;\n  flex: 1 0 32.23%;\n  cursor: pointer; }\n", ""]);
 
 // exports
 

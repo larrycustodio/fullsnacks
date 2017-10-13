@@ -33,6 +33,7 @@ module.exports = {
             exclude: /node_modules/,
             loaders: ['babel-loader'],
           },
+          //Sass loader
           {
             test: /\.scss$/,
             loaders: ["style-loader", "css-loader", "sass-loader"]
@@ -41,6 +42,13 @@ module.exports = {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]',
           },
+          {
+            test: /\.(png|svg|jpg|gif)$/,
+            loader: 'url-loader',
+            options: {
+              limit: 25000
+            }
+          }
         ]
       },
       devServer: {
