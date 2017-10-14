@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import LoadingContainer from './LoadingView';
 import axios from 'axios';
-import YelpResultsContainer from '/Results_Components/YelpResultsContainer';
-import MapContainer from '/Results_Components/MapContainer';
+import YelpResultsContainer from './Results_Components/YelpResultsContainer';
+import MapContainer from './Results_Components/MapContainer';
 
 class ResultsView extends Component {
     constructor(props) {
