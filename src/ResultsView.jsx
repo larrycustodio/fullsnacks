@@ -16,7 +16,7 @@ class ResultsView extends Component {
                 sort: '1',
             },
             yelpResults: {},
-            googleMapsResults: {}, 
+            googleMapsResults: {},
             isSearchDone: false
         }
     }
@@ -25,35 +25,34 @@ class ResultsView extends Component {
     }
     componentWillMount() {
         const search = this.state.searchFilters;
-        const requestUrl = 'http://localhost:3002/api/yelp/search/' + search.category_filter + '/location/' + search.location; 
-        console.log(requestUrl);
-        axios.get(requestUrl)
+        const yelpRequestUrl = 'http://localhost:3002/api/yelp/search/' + search.category_filter + '/location/' + search.location;
+        axios.get(yelpRequestUrl)
             .then(res => res.data)
-            .then(results => {
+            .then(yelpResults => {
                 this.setState({
-                    yelpResults: results,
+                    yelpResults: yelpResults,
                     isSearchDone: true
                 });
             });
     }
     render() {
-        if(!this.state.isSearchDone){
-            console.log('loading...');
+        if (!this.state.isSearchDone) {
+            console.log('loading Yelp results...');
             return (
                 <LoadingContainer />
             );
         } else {
             console.log('done!');
             return (
-                    <div className='view-container view-search-results'>
-                        <YelpResultsContainer
-                            businesses={this.state.yelpResults.businesses}
-                            categories={this.props.categories}
-                            onClick={this.onClickHandler} />
-                        <MapContainer />
-                    </div>
-                );
-            }
+                <div className='view-container view-search-results'>
+                    <YelpResultsContainer
+                        businesses={this.state.yelpResults.businesses}
+                        categories={this.props.categories}
+                        onClick={this.onClickHandler} />
+                    <MapContainer location={this.state.searchFilters.location} />
+                </div>
+            );
+        }
     }
 }
 

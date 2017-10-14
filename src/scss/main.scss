@@ -5,8 +5,11 @@
    --------------- */
 $color-background-main:rgb(255, 239, 207);
 $color-background-navbar:rgb(81, 60, 43);
+$color-background-scrollbar-thumb: rgba(48, 48, 48, 0.8);
+$color-background-scrollbar-track: rgba(212,212,212,0.5);
 $color-background-sprite-active: rgb(83, 62, 31);  
 $color-background-sprite: rgb(116, 98, 86);
+
 
 $color-text-header: rgb(229, 137, 0);
 $color-text-subheader: rgb(152, 97, 14);
@@ -72,16 +75,22 @@ $color-input-border: rgb(138, 101, 38);
 * {
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
     background: $color-background-main;
     color: $color-text-main;
     font-family: 'Raleway', 'Helvetica', 'Segoe UI', sans-serif;
     font-size: 1.375rem;
+    height: 100%;
+
 }
 
 .container {
     display: flex;
     flex-flow: row wrap;
+    height: 100vh;
 }
 a,
 a:hover,
@@ -99,20 +108,21 @@ a:focus {
 .nav {
     background: $color-background-navbar;
     color: $color-text-overlay;
+    flex: 1 0 100%;
     font-family: 'Lato','Helvetica', sans-serif;
-    font-size: 2em;
+    font-size: 1.875em;
     font-weight: 700;
-    height: 10.8%;
+    height: 10vh;
     text-align: center;
-    line-height: 2em;
-    width: 100%;
+    line-height: 1.875em;
 }
 /* ------------------
    4.2 Section Headers & Containers
    ------------------ */
 .section-container {
     text-align: center;
-    width: 100%;
+    flex: 1 0 100%;
+    height: 90vh;
 }
 .section-header {
     color: $color-text-header;
@@ -190,26 +200,52 @@ a:focus {
 .view-search-results {
     display: flex;
     flex-flow: row nowrap;
-    height: 90vh
+    height: 90vh;
 }
 .results-nearby {
+    align-items: center;
+    display: flex;
     font-family: 'Lato','Helvetica','sans-serif';
-    font-size: 1.48em;
+    flex-flow: column nowrap;
+    font-size: 1.18em;
     font-weight: 700;
-    height: 4%;    
-    margin: 1.12em 0;
+    height: 5vh;    
+    margin: 0.85em 0;
+    > p {
+        margin: 0;
+    }
 }
 .display-list-results {
-    flex: 1 0 30.5vw;
-    max-width: 30.5vw;
+    display: flex;
+    flex: 1 0 25%;
+    flex-flow: column nowrap;
+    max-width: 25vw;
 }
 .results-list {
-    max-height: 73.5%;
+    height: 70vh;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar-track
+    {
+        background-color: $color-background-scrollbar-track;
+    }
+    
+    &::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: $color-background-scrollbar-thumb;
+    }
+    
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 0px;
+        background-color: $color-background-scrollbar-thumb;
+    }
+
 }
 .result-list-card {
     color: $color-text-overlay;
-    height: 17vh;
+    height: 16vh;
     max-width: 100%;
     padding: 1em;
     text-align: left;
@@ -227,7 +263,8 @@ a:focus {
 }
 .toggle-cat {
     display: flex;
-    flex: row wrap;
+    flex-flow: row wrap;
+    height: 15vh;
 }
 .cat-icon {
     background: $color-background-sprite;
@@ -244,7 +281,7 @@ a:focus {
    4.4 Search Results - Map
    -------------------------- */
 .display-map-results {
-    flex: 1 0 69%;
-    //placeholder
+    flex: 3 0 75%;
+    max-width: 75vw;
     background: #72ca76;
 }

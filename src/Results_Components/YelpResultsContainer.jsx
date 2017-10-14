@@ -4,7 +4,7 @@ const YelpResultsContainer = (props) => {
     return (
         <div className='display-list-results'>
             <div className='results-nearby'>
-                Found {props.businesses.length} places nearby!
+                <p>{'Found ' + props.businesses.length + ' places nearby!'}</p>
             </div>
             <div className='results-list'>
                 {props.businesses.map((place,index) => {
