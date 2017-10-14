@@ -9,7 +9,7 @@ const BusinessList = (props) => {
     const ratingStars = Math.trunc(info.rating) !== info.rating ? Math.trunc(info.rating) + '_half' : info.rating; 
     return (
         <div className='result-list-card' style={backgroundImage}>
-            <p className='list-name'>{info.name}</p>
+            <p className='list-name'>{props.order+1 +'. ' + info.name}</p>
             <img className='list-rating'
                 src=  {'./assets/yelp_stars/small/small_' + ratingStars + '.png' } />
             <p className='list-distance'>{'~'+ (info.distance * 0.622 * 0.001).toFixed(1) + ' miles away'}</p>
@@ -43,7 +43,8 @@ const YelpResultsContainer = (props) => {
                     return (
                         <BusinessList
                         key={'list-'+index}
-                        businessInfo={place} />
+                        businessInfo={place}
+                        order={index} />
                     );
                 })}
             </div>
