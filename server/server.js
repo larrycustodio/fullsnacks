@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 /* Yelp Fusion API */
 app.get('/api/yelp/search/:term/location/:location', (req, res) => {
-    let yelp = new Yelp({
+    const yelp = new Yelp({
         app_id: 'Ts9mXy-CsdlBMR8Ub9RpOg',
         app_secret: '1r4iNuYsYsY4Dc6ITMPTeZoyH8fzKPuAVJAQLOTaweYvNaA2SSb4T7OodY6VZPBA'
     });

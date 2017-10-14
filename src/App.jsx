@@ -10,6 +10,7 @@ class App extends Component {
             searchFilter: {
                 name: '',
                 categories: '',
+                dataValue: '',
                 location: ''
             },
             options: [
@@ -50,6 +51,7 @@ class App extends Component {
         const optionIndex = e.target.dataset.categoryValue;
         updateChoice.name = this.state.options[optionIndex].name;
         updateChoice.categories = this.state.options[optionIndex].categories;
+        updateChoice.dataValue = optionIndex;
         this.setState({
             searchFilter: updateChoice
         });
@@ -78,4 +80,5 @@ class App extends Component {
         );
     }
 }
+
 export default App;

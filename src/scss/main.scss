@@ -271,6 +271,9 @@ a:focus {
     color: $color-text-overlay;
     flex: 1 0 33%;
 }
+.active-cat {
+    background: $color-background-sprite-active;
+}
 .cat-icon-svg {
     height: 85px;
 }
@@ -284,4 +287,7 @@ a:focus {
     flex: 3 0 75%;
     max-width: 75vw;
     background: #72ca76;
+}
+.place-marker-icon {
+    height: 40px;
 }

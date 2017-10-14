@@ -1,5 +1,17 @@
 import React from 'react';
 
+const BreakfastOption = (props) => {
+    return (
+        <div className='category-option'>
+            <img className='select-icon'
+                src={props.category.selectionSrc}
+                onClick={props.onClick}
+                data-category-value={props.index}
+                alt={props.category.name + '-icon-option'} />
+        </div>
+    );
+}
+
 const CategoryView = (props) => {
     return (
         <div className='view-container'>
@@ -16,18 +28,6 @@ const CategoryView = (props) => {
                         onClick={props.onClick} />
                 })}
             </div>
-        </div>
-    );
-}
-
-const BreakfastOption = (props) => {
-    return (
-        <div className='category-option'>
-            <img className='select-icon'
-                src={props.category.selectionSrc}
-                onClick={props.onClick}
-                data-category-value={props.index}
-                alt={props.category.name + '-icon-option'} />
         </div>
     );
 }

@@ -9,10 +9,11 @@ class ResultsView extends Component {
         super(props);
         this.state = {
             searchFilters: {
-                category_filter: this.props.search.categories,
-                limit: '10',
-                location: this.props.search.location,
                 name: this.props.search.name,
+                category_filter: this.props.search.categories,
+                location: this.props.search.location,
+                dataValue: this.props.search.dataValue,
+                limit: '10',
                 sort: '1',
             },
             yelpResults: {},
@@ -48,8 +49,11 @@ class ResultsView extends Component {
                     <YelpResultsContainer
                         businesses={this.state.yelpResults.businesses}
                         categories={this.props.categories}
-                        onClick={this.onClickHandler} />
-                    <MapContainer location={this.state.searchFilters.location} />
+                        onClick={this.onClickHandler}
+                        prevSelectedIndex={this.state.searchFilters.dataValue} />
+                    <MapContainer
+                        location={this.state.searchFilters.location}
+                        yelpResults={this.state.yelpResults.businesses} />
                 </div>
             );
         }

@@ -1,34 +1,5 @@
 import React from 'react';
 
-const YelpResultsContainer = (props) => {
-    return (
-        <div className='display-list-results'>
-            <div className='results-nearby'>
-                <p>{'Found ' + props.businesses.length + ' places nearby!'}</p>
-            </div>
-            <div className='results-list'>
-                {props.businesses.map((place,index) => {
-                    return (
-                        <BusinessList className='list'
-                        key={'list-'+index}
-                        businessInfo={place} />
-                    );
-                })}
-            </div>
-            <div className='toggle-cat'>
-                {props.categories.map((icon, index) => {
-                    return (
-                        <CategorySprite className='cat-icon'
-                            key={'sprite-' + index}
-                            index={index}
-                            onClick={props.onClick}
-                            icon={icon} />
-                    );
-                })}
-            </div>
-        </div>
-    );
-}
 const BusinessList = (props) => {
     const info = props.businessInfo;
     const backgroundImage = {
@@ -45,9 +16,10 @@ const BusinessList = (props) => {
         </div>
     );
 }
+
 const CategorySprite = (props) => {
     return (
-        <div className='cat-icon'
+        <div className={props.className}
             onClick={props.onClick}
             data-category-value={props.index} >
             <img className='cat-icon-svg'
@@ -56,6 +28,38 @@ const CategorySprite = (props) => {
             <p className='cat-icon-name'>
                 {props.icon.name.toUpperCase()}
             </p>
+        </div>
+    );
+}
+
+const YelpResultsContainer = (props) => {
+    return (
+        <div className='display-list-results'>
+            <div className='results-nearby'>
+                <p>{'Found ' + props.businesses.length + ' places nearby!'}</p>
+            </div>
+            <div className='results-list'>
+                {props.businesses.map((place,index) => {
+                    return (
+                        <BusinessList
+                        key={'list-'+index}
+                        businessInfo={place} />
+                    );
+                })}
+            </div>
+            <div className='toggle-cat'>
+                {props.categories.map((icon, index) => {
+                    const addActiveClass = (props.prevSelectedIndex == index)? 'active-cat' : '';
+                    return (
+                        <CategorySprite 
+                            className={'cat-icon ' + addActiveClass}
+                            key={'sprite-' + index}
+                            index={index}
+                            onClick={props.onClick}
+                            icon={icon} />
+                    );
+                })}
+            </div>
         </div>
     );
 }
