@@ -27,21 +27,23 @@ module.exports = {
     
       module: {
         loaders: [
-          //Add Babel loader
+          //Babel Loader
           {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loaders: ['babel-loader'],
           },
-          //Sass loader
+          //Sass Loader
           {
             test: /\.scss$/,
             loaders: ["style-loader", "css-loader", "sass-loader"]
           },
+          //HTML Loader
           {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]',
           },
+          //IMG Loader
           {
             test: /\.(png|svg|jpg|gif)$/,
             loader: 'url-loader',
