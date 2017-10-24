@@ -11,8 +11,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "npm run sass && webpack-dev-server",
-    "start": "node server/index.js",
-    "sass": "",
+    "start": "node server/index.js && webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
