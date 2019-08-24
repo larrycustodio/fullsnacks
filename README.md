@@ -1,2 +1,4 @@
 # breakfast-finder
-Nearby breakfast finder React app. Powered by Yelp Fusion and Mapbox
+
+Can't decide what to have when eating out?
+[Visit Demo](food-mapper-lcconcepts.netlify.com)
