@@ -1,6 +1,22 @@
-/* eslint no-console: "off" */
-const server = require('./server');
+const express = require('express')
+const webpack = require('webpack')
+const webpackDevMiddleware = require('webpack-dev-middleware')
 
-const PORT = process.env.PORT || 3002;
+const app = express()
+const config = require('./webpack.config.js')
+const compiler = webpack(config)
 
-server.listen(PORT, () => console.log(`Server is listening on http://localhost:${PORT}`));
+const PORT = 3030
+
+// Tells express to use the webpack-dev-middleware and use the webpack.config.js
+// configuration file as a base.
+app.use(
+  webpackDevMiddleware(compiler, {
+    publicPath: config.output.publicPath,
+  }),
+)
+
+// Serve the files on port 3000.
+app.listen(PORT, function() {
+  console.log(`Open app on http://localhost:${PORT}!\n`)
+})
