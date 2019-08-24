@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+module.exports = env => ({
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   module: {
     rules: [
@@ -18,6 +18,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
+      minify: env.production,
     }),
   ],
   resolve: {
@@ -28,4 +29,4 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
-}
+})

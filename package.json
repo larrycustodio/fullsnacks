@@ -4,6 +4,7 @@
   "description": "Project sandbox that does the thinking for you -- what should I get for lunch today?",
   "main": "./index.js",
   "scripts": {
+    "build": "yarn run clean-dist && webpack --mode production --env.production",
     "clean-dist": "rm -rf dist",
     "develop": "yarn run clean-dist && webpack-dev-server --open",
     "start": "echo \"To spin up a local devserver, run yarn run develop.\"",
