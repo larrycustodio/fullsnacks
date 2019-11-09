@@ -1,7 +1,6 @@
 {
-  "name": "breakfast-finder",
+  "name": "fullsnacks",
   "version": "2.0.0",
-  "description": "Project sandbox that does the thinking for you -- what should I get for lunch today?",
   "main": "./index.js",
   "scripts": {
     "build": "yarn run clean-dist && webpack --mode production --env.production",
@@ -10,13 +9,11 @@
     "start": "echo \"To spin up a local devserver, run yarn run develop.\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/larrycustodio/breakfast-finder.git",
+  "repository": "git+https://github.com/larrycustodio/fullsnacks.git",
   "keywords": [
     "react",
-    "yelp",
-    "mapbox",
-    "node",
-    "typescript"
+    "typescript",
+    "react-spring"
   ],
   "author": "larrycustodio",
   "license": "MIT",
