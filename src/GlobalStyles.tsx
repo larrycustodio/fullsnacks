@@ -5,13 +5,17 @@ const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
   }
   html {
-    line-height: 1.15;
     -webkit-text-size-adjust: 100%;
   }
   body {
     margin: 0;
     min-height: 100vh;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #app {
+    min-height: 100%;
   }
   main {
     display: block;
@@ -29,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+    padding: 0;
   }
   strong {
     font-weight: 700;

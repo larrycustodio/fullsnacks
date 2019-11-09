@@ -8,7 +8,7 @@ import ClaimsConcepts from './pages/ClaimsConcepts'
 interface MainProps {}
 
 const Main: React.FC<MainProps> = () => (
-  <div>
+  <>
     <GlobalStyle />
     <Router>
       <Switch>
@@ -20,7 +20,7 @@ const Main: React.FC<MainProps> = () => (
         </Route>
       </Switch>
     </Router>
-  </div>
+  </>
 )
 
 ReactDOM.render(<Main />, document.getElementById('app'))
