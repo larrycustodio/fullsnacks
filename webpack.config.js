@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = env => ({
-  entry: path.resolve(__dirname, 'src', 'index.tsx'),
+  entry: path.resolve(__dirname, 'src', 'Main.tsx'),
   module: {
     rules: [
       {
@@ -13,6 +13,7 @@ module.exports = env => ({
     ],
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: './dist',
   },
   plugins: [

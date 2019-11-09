@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e42dcc0c-3eff-44ac-99da-abf0a9ada92f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/ClaimsConcepts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/CategoryView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/LoadingView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/LocationView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/ResultsView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/Results_Components/MapContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/Results_Components/YelpResultsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__legacy__/scss/main.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,19 +32,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/fullsnacks.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1TOKUUPEydiCBEqQGBa5P6FqI2z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -53,24 +63,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573325717781</updated>
-      <workItem from="1573325720462" duration="116000" />
+      <workItem from="1573325720462" duration="1268000" />
+      <workItem from="1573327124646" duration="1244000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/__legacy__/index.jsx" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
