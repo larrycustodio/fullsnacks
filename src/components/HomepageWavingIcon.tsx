@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const HomepageWavingIcon: React.FC = () => {
   const props = useSpring({
     from: { transform: 'rotate(15deg)', transformOrigin: '50% 50%' },
-    to: async next => {
+    to: async (next: any): Promise<void> => {
       while (1) {
         await next({
           transform: 'rotate(-15deg)',
