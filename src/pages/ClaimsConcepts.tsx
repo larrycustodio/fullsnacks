@@ -1,9 +1,7 @@
 import * as React from 'react'
 
-interface ClaimsConceptsProps { }
+interface ClaimsConceptsProps {}
 
-const ClaimsConcepts: React.FC<ClaimsConceptsProps> = () => (
-  <div>CLAIMS AF 🔥</div>
-)
+const ClaimsConcepts: React.FC<ClaimsConceptsProps> = () => <div>CLAIMS AF 🔥</div>
 
 export default ClaimsConcepts
