@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e42dcc0c-3eff-44ac-99da-abf0a9ada92f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/icons/Branding.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/StoreInputForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomepageWavingIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomepageWavingIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ClaimsConcepts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Onboarding.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +27,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -29,18 +43,6 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -58,22 +60,39 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4458" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595920973429">
+      <screen x="3440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="4458" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/3440.23.2560.1417/0.23.3440.1417@3440.23.2560.1417" timestamp="1595920973429" />
+    <state x="4915" y="441" key="RollbackChangesDialog" timestamp="1595917180707">
+      <screen x="3440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="4915" y="441" key="RollbackChangesDialog/3440.23.2560.1417/0.23.3440.1417@3440.23.2560.1417" timestamp="1595917180707" />
+    <state x="4403" y="495" width="634" height="472" key="find.popup" timestamp="1595919264154">
+      <screen x="3440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="4403" y="495" width="634" height="472" key="find.popup/3440.23.2560.1417/0.23.3440.1417@3440.23.2560.1417" timestamp="1595919264154" />
+    <state x="4810" y="346" width="672" height="678" key="search.everywhere.popup" timestamp="1595923216521">
+      <screen x="3440" y="23" width="2560" height="1417" />
+    </state>
+    <state x="4810" y="346" width="672" height="678" key="search.everywhere.popup/3440.23.2560.1417/0.23.3440.1417@3440.23.2560.1417" timestamp="1595923216521" />
   </component>
 </project>

@@ -1,19 +1,19 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
+import React, { FC } from 'react'
+import { render } from 'react-dom'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from './GlobalStyles'
-import Home from './pages/Home'
-import ClaimsConcepts from './pages/ClaimsConcepts'
+import { Home } from './pages/Home'
+import { Onboarding } from './pages/Onboarding'
 
 interface MainProps {}
 
-const Main: React.FC<MainProps> = () => (
+const Main: FC<MainProps> = () => (
   <>
     <GlobalStyle />
     <Router>
       <Switch>
-        <Route exact path="/claims-concepts">
-          <ClaimsConcepts />
+        <Route path="/onboarding">
+          <Onboarding />
         </Route>
         <Route exact path="/">
           <Home />
@@ -23,4 +23,4 @@ const Main: React.FC<MainProps> = () => (
   </>
 )
 
-ReactDOM.render(<Main />, document.getElementById('app'))
+render(<Main />, document.getElementById('app'))

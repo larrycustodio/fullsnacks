@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import HomepageWavingIcon from '../components/HomepageWavingIcon'
+import { HomepageWavingIcon } from '../components/HomepageWavingIcon'
+import { Link } from 'react-router-dom'
 
 interface HomeProps {}
 
@@ -13,15 +14,13 @@ const Home: React.FC<HomeProps> = () => (
       </Header>
       <Subheader>I dabble with all sorts of techniques to create rich user interfaces.</Subheader>
       <WorkNav>
-        <p>
-          <span role="img">🚧</span>&nbsp; <span role="img">👨‍💻</span>
-        </p>
+        <NavItem to="/onboarding">Store Onboarding</NavItem>
       </WorkNav>
     </Hero>
   </Main>
 )
 
-export default Home
+export { Home }
 
 const Main = styled.main({
   display: 'flex',
@@ -48,7 +47,9 @@ const Subheader = styled.p({
   margin: '0 0 27px',
 })
 
-const WorkNav = styled.div({
+const WorkNav = styled.nav({
   fontSize: '26px',
   lineHeight: '42px',
 })
+
+const NavItem = styled(Link)({})
